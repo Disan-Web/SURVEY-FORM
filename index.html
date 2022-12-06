@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Alps Survey form</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <h1 id ="title">SALON ALPS SURVEY FORM</h1>
+<p id = "description" ><strong>Thank you for taking your time to improve our salon</strong></p>
+
+<form id ="survey-form"action ="#">
+  <div class="form-component">
+    <label id ="name-label" for ="name">Name</label>
+      <input type ="text" name="name" id="name" placeholder ="Enter your name" required>
+  </div><br>
+  <div class="form-component">
+    <label id="email-label" for="email">Email</label>
+      <input type ="email" name="email" id="email" placeholder="Enter your email" required> 
+  </div><br>
+  <div class ="form-component">
+    <label id="number-label" for="number">Age<span class="optional">(Optional)</span></label>
+      <input type="number"name="age" id="number" min="15"max="90" placeholder="Enter your age">
+  </div><br>
+  <div id="dropdown" required><p>How often do you visit Salon Alps?</p>
+    <label for="times" style="color: blue;">Choose number of times</label>
+  <select id="times"name="times">
+    <option value="Everyday">Everyday</option>
+    <option value="Once in a week">Once in a week</option>
+    <option value="Once in a month">Once in a month</option>
+    <option value ="Two times a week">Two times a week</option>
+    <option value="Every after two weeks">Every after two weeks</option>
+  </select>
+  </div><br>
+  <div><p>Which hair style do you usually shave?</p>
+    <label for ="Shaureen">
+      <div style="color: blue;">
+      <input id="Shaureen" type="radio"name="service">Shaureen</label>
+    <label for="Maroon">
+      <input id="Maroon" type="radio" name="service">Maroon</label>
+    <label for ="Brush">
+      <input id ="Brush" type="radio" name="service">Brush</label>
+    <label for="Other">
+      <input id ="Other" type="radio" name="service">Other</label></div>
+   </div><br>
+   <div class="Improvement">
+  <div><p>What do you want us to improve? (check all those that apply)</p>
+    <div style="color: blue;">
+    <label for ="Customer care">
+      <input id="Customer care"type="checkbox"name="Improvement" value="Customer care">Customer care</label>
+    <label for="Time management">
+      <input id="Time management"type="checkbox"name="Improvement" value="Time management">Time management</label>
+    <label for="Skillfulness">
+      <input id="Skillfulness"type="checkbox"name="Improvement" value="Skillfulness">Skillfulness</label></div>
+   </div><br>
+  <div><p>Any comments or suggestions?</p>
+    <textarea placeholder="Enter your comment here..."></textarea>
+   </div><br>
+   <div class = "submit">
+    <button type = "submit" id="submit">submit 
+    </button>
+   </div>
+</form>
+    
+
+    
+</body>
+</html>

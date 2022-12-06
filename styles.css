@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    background: white;
+  }
+  #description{
+    color: orange;
+    font-size: 30px;
+  }
+  #survey-form{
+    color: magenta;
+  }
+  #title{
+    color: green;
+  }
+  
